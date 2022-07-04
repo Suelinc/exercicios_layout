@@ -7,8 +7,6 @@ void main() {
 class MenuDrawer extends StatefulWidget {
   const MenuDrawer({Key? key}) : super(key: key);
 
-
-
   @override
   State<MenuDrawer> createState() => _MenuDrawerState();
 }
@@ -50,19 +48,20 @@ class _MenuDrawerState extends State<MenuDrawer> {
                     subtitle: const Text('Tudo são Widgets'),
                     trailing:
                         const Icon(Icons.arrow_forward_ios_sharp, size: 20.0),
-                    onTap: () {}),
-                const ListTile(
-                  leading: Icon(Icons.emoji_emotions_outlined,
-                      color: Colors.redAccent),
-                  title: Text('Dart'),
-                  subtitle: Text('É muito forte'),
-                  trailing: Icon(Icons.arrow_forward_ios_sharp, size: 20.0),
-                ),
-                const ListTile(
-                  leading: Icon(Icons.coffee, color: Colors.brown),
-                  title: Text('Cafessineo'),
-                  subtitle: Text('Quero cafééé'),
-                  trailing: Icon(Icons.arrow_forward_ios_sharp, size: 20.0),
+                    onTap: () {},),
+                ListTile(
+                    leading: const Icon(Icons.emoji_emotions_outlined,
+                        color: Colors.redAccent),
+                    title: const Text(' Dart'),
+                    subtitle: const Text('É muito forte'),
+                    trailing: const Icon(Icons.arrow_forward_ios_sharp, size: 20.0),
+                    onTap: () {},),
+                ListTile(
+                  leading: const Icon(Icons.coffee, color: Colors.brown),
+                  title: const Text('Cafessineo'),
+                  subtitle: const Text('Quero cafééé'),
+                  trailing: const Icon(Icons.arrow_forward_ios_sharp, size: 20.0),
+                  onTap: () {},
                 ),
               ],
             ),
